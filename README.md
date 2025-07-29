@@ -30,9 +30,9 @@ Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para
 
 ## [Matriz curricular BCC](<https://github.com/dalton-reis/dalton-reis/blob/main/_._/matriz_BCC.pdf> "Matriz curricular BCC")  
 
-## [AVA3 Matutino] ou [AVA3 Noturno]
+## <!-- [AVA3 Matutino] ou -->[AVA3 Noturno]
 
-## [AVA3 Matutino Plano] ou [AVA3 Noturno Plano]  
+## <!-- [AVA3 Matutino Plano] ou -->[AVA3 Noturno Plano]  
 
 ## [Cronograma]  
 
