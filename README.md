@@ -48,7 +48,7 @@ Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para
 
 ## Visão Geral
 
-![Visão Geral](visaoGeral.drawio.svg)  
+![Visão Geral](./visaoGeral.drawio.svg)  
 
 <!--
 TODO: VOLTOU a FUNCIONAR ... erro ao gerar os PlatUml porque inclui as pastas OBJ e BIN
