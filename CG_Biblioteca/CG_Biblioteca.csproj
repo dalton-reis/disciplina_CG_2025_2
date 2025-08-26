@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>CG_Biblioteca</RootNamespace>
+    <AssemblyName>CG_Biblioteca</AssemblyName>
+    <TargetFramework>net9.0</TargetFramework>
+      <DefineConstants>CG_OpenGL;CG_Gizmo;CG_Debug;CG_BBox;</DefineConstants>
+      <!-- CG_Privado; -->
+      <!--TODO: o desenho da BBox ficou na biblioteca e não tem como remover só a diretiva no projeto para não desenhar a BBox-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="4.9.4" />
+    <PackageReference Include="StbImageSharp" Version="2.30.15" />
+  </ItemGroup>
+</Project>

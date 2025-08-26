@@ -1,0 +1,47 @@
+@startuml Objeto
+class Objeto {
+    - <<readonly>> rotulo : char
+    + Rotulo : char <<get>>
+    - primitivaTamanho : float = 1
+    + PrimitivaTamanho : float <<get>> <<set>>
+    + PontosListaTamanho : int <<get>>
+    - _vertexBufferObject : int
+    - _vertexArrayObject : int
+    + Bbox() : BBox
+    + Objeto(_paiRef:Objeto, _rotulo:char, objetoFilho:Objeto)
+    + ObjetoRemover() : void
+    + ObjetoAtualizar() : void
+    + ObjetoMatrizGlobal(matrizGlobalPai:Transformacao4D) : Transformacao4D
+    + Desenhar(matrizGrafo:Transformacao4D, objetoSelecionado:Objeto) : void
+    + FilhoAdicionar(filho:Objeto) : void
+    + PontosId(id:int) : Ponto4D
+    + PontosAdicionar(pto:Ponto4D) : void
+    + PontosAlterar(pto:Ponto4D, posicao:int) : void
+    + PontosApagar() : void
+    + MatrizGlobalInversa(mousePto:Ponto4D) : Ponto4D
+    + PontoMaisPerto(mousePto:Ponto4D, remover:bool) : int
+    + GrafocenaBusca(_rotulo:char) : Objeto
+    + GrafocenaAtualizar(lista:Dictionary<char, Objeto>) : Dictionary<char, Objeto>
+    + GrafocenaImprimir(idt:string) : void
+    + MatrizImprimir() : void
+    + MatrizAtribuirIdentidade() : void
+    + MatrizTranslacaoXYZ(tx:double, ty:double, tz:double) : void
+    + MatrizEscalaXYZ(Sx:double, Sy:double, Sz:double) : void
+    + MatrizEscalaXYZBBox(Sx:double, Sy:double, Sz:double) : void
+    + MatrizRotacaoEixo(angulo:double) : void
+    + MatrizRotacao(angulo:double) : void
+    + MatrizRotacaoZBBox(angulo:double) : void
+    + OnUnload() : void
+    + ScanLine(ptoClique:Ponto4D, objetoSelecionado:Objeto) : bool
+}
+class "List`1"<T> {
+}
+Objeto --> "paiRef" Objeto
+Objeto o-> "objetosLista<Objeto>" "List`1"
+Objeto o-> "primitivaTipo" PrimitiveType
+Objeto --> "PrimitivaTipo" PrimitiveType
+Objeto o-> "_shaderObjeto" Shader
+Objeto --> "ShaderObjeto" Shader
+Objeto o-> "pontosLista<Ponto4D>" "List`1"
+Objeto o-> "bBox" BBox
+@enduml

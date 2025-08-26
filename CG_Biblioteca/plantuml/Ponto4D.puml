@@ -1,0 +1,14 @@
+@startuml Ponto4D
+class Ponto4D {
+    - x : double
+    - y : double
+    - z : double
+    - <<readonly>> w : double
+    + Ponto4D(x:double, y:double, z:double, w:double)
+    + Ponto4D(pto:Ponto4D)
+    + X : double <<get>> <<set>>
+    + Y : double <<get>> <<set>>
+    + Z : double <<get>> <<set>>
+    + W : double <<get>>
+}
+@enduml

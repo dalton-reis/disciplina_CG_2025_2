@@ -1,0 +1,12 @@
+@startuml
+class Shader {
+    + <<readonly>> Handle : int
+    + Shader(vertPath:string, fragPath:string)
+    + Use() : void
+    + GetAttribLocation(attribName:string) : int
+    + SetInt(name:string, data:int) : void
+    + SetFloat(name:string, data:float) : void
+    + SetMatrix4(name:string, data:Matrix4) : void
+    + SetVector3(name:string, data:Vector3) : void
+}
+@enduml

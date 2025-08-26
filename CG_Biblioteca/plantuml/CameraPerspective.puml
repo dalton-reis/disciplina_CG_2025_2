@@ -1,0 +1,21 @@
+@startuml Camera
+class Camera {
+    - _pitch : float
+    - _yaw : float
+    - _fov : float
+    - Camera(position:Vector3, aspectRatio:float)
+    - AspectRatio : float <<set>>
+    - Pitch : float <<get>> <<set>>
+    - Yaw : float <<get>> <<set>>
+    - Fov : float <<get>> <<set>>
+    - GetViewMatrix() : Matrix4
+    - GetProjectionMatrix() : Matrix4
+}
+Camera o-> "_front" Vector3
+Camera o-> "_up" Vector3
+Camera o-> "_right" Vector3
+Camera --> "Position" Vector3
+Camera --> "Front" Vector3
+Camera --> "Up" Vector3
+Camera --> "Right" Vector3
+@enduml

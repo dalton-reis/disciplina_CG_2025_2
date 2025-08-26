@@ -1,0 +1,13 @@
+@startuml Matematica
+abstract class Matematica {
+    + {static} GerarPtosCirculo(angulo:double, raio:double) : Ponto4D
+    + {static} GerarPtosCirculoSimetrico(raio:double) : double
+    + {static} InterpolarRetaPonto(ptoA:Ponto4D, ptoB:Ponto4D, t:double) : Ponto4D
+    + {static} Dentro(bBox:BBox, pto:Ponto4D) : bool
+    + {static} DistanciaQuadrado(ptoA:Ponto4D, ptoB:Ponto4D) : double
+    + {static} Distancia(ptoA:Ponto4D, ptoB:Ponto4D) : double
+    + {static} ScanLineInterseccao(yi:double, y1:double, y2:double) : double
+    + {static} InterpolarRetaValor(valor1:double, valor2:double, ti:double) : double
+    + {static} ScanLine(ptoClique:Ponto4D, ptoIni:Ponto4D, ptoFim:Ponto4D) : bool
+}
+@enduml

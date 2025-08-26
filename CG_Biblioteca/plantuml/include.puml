@@ -1,0 +1,12 @@
+@startuml
+!include ./CameraPerspective.puml
+!include ./Utilitario.puml
+!include ./Transformacao4D.puml
+!include ./Objeto.puml
+!include ./BBox.puml
+!include ./Ponto4D.puml
+!include ./Grafocena.puml
+!include ./Matematica.puml
+!include ./Shaders/Shader.puml
+!include ./Shaders/Texture.puml
+@enduml

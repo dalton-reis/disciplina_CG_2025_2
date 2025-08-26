@@ -1,0 +1,19 @@
+@startuml Transformacao4D
+class Transformacao4D {
+    {static} + <<readonly>> DEG_TO_RAD : double = 0.017453292519943295769236907684886
+    + Transformacao4D()
+    + Inversa() : void
+    + AtribuirIdentidade() : void
+    + AtribuirTranslacao(tx:double, ty:double, tz:double) : void
+    + AtribuirEscala(sX:double, sY:double, sZ:double) : void
+    + AtribuirRotacaoX(radians:double) : void
+    + AtribuirRotacaoY(radians:double) : void
+    + AtribuirRotacaoZ(radians:double) : void
+    + MultiplicarPonto(pto:Ponto4D) : Ponto4D
+    + MultiplicarMatriz(t:Transformacao4D) : Transformacao4D
+    + ObterElemento(index:int) : double
+    + AtribuirElemento(index:int, value:double) : void
+    + ObterDados() : double[]
+    + AtribuirDados(data:double[]) : void
+}
+@enduml

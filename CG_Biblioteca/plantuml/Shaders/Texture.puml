@@ -1,0 +1,8 @@
+@startuml
+class Texture {
+    + <<readonly>> Handle : int
+    + {static} LoadFromFile(path:string) : Texture
+    + Texture(glHandle:int)
+    + Use(unit:TextureUnit) : void
+}
+@enduml

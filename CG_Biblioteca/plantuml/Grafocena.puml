@@ -1,0 +1,7 @@
+@startuml Grafocena
+class Grafocena <<static>> {
+    + {static} GrafocenaAtualizar(mundo:Objeto, grafoLista:Dictionary<char, Objeto>) : void
+    + {static} GrafoCenaProximo(mundo:Objeto, objetoSelecionado:Objeto, grafoLista:Dictionary<char, Objeto>) : Objeto
+    + {static} GrafoCenaImprimir(mundo:Objeto, grafoLista:Dictionary<char, Objeto>) : void
+}
+@enduml
