@@ -58,7 +58,7 @@ Para testar a IDE VSCode abra o projeto criado.
 
 O terceiro passo é fazer com que o projeto use as dependências do Toolkit OpenTK (para usar o OpenGL no C#) no projeto criado:  
 
-  $ dotnet add package OpenTK --version 4.8.2
+  $ dotnet add package OpenTK --version 4.94
 
 ### Testar o OpenTK
 
