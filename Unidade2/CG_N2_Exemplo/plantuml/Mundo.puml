@@ -1,0 +1,25 @@
+@startuml Mundo
+class Mundo {
+    - rotuloAtual : char = '?'
+    - mouseMovtoPrimeiro : bool = true
+    + Mundo(gameWindowSettings:GameWindowSettings, nativeWindowSettings:NativeWindowSettings)
+    - <<override>> OnLoad() : void
+    - <<override>> OnRenderFrame(e:FrameEventArgs) : void
+    - <<override>> OnUpdateFrame(e:FrameEventArgs) : void
+    - <<override>> OnResize(e:ResizeEventArgs) : void
+    - <<override>> OnUnload() : void
+    - Gizmo_Sru3D() : void
+}
+class "Dictionary`2"<T1,T2> {
+}
+GameWindow <|-- Mundo
+Mundo o-> "mundo" Objeto
+Mundo o-> "grafoLista<char,Objeto>" "Dictionary`2"
+Mundo o-> "objetoSelecionado" Objeto
+Mundo o-> "matrizGrafo" Transformacao4D
+Mundo --> "_shaderVermelha" Shader
+Mundo --> "_shaderVerde" Shader
+Mundo --> "_shaderAzul" Shader
+Mundo --> "_shaderCiano" Shader
+Mundo --> "mouseMovtoUltimo" Ponto4D
+@enduml

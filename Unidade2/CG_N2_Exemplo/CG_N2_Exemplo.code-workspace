@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../CG_Biblioteca"
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "CG_N2_Exemplo/CG_N2_Exemplo.sln"
+	}
+}

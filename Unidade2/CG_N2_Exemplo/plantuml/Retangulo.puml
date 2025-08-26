@@ -1,0 +1,9 @@
+@startuml Retangulo
+class Retangulo {
+    + Retangulo(_paiRef:Objeto, _rotulo:char)
+    + Retangulo(_paiRef:Objeto, _rotulo:char, ptoInfEsq:Ponto4D, ptoSupDir:Ponto4D)
+    + Atualizar() : void
+    + <<override>> ToString() : string
+}
+Objeto <|-- Retangulo
+@enduml

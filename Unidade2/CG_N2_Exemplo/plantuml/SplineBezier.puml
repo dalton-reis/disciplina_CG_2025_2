@@ -1,0 +1,18 @@
+@startuml SplineBezier
+class SplineBezier {
+    - ptoSelecionado : int = 0
+    - rotuloAtual : char
+    - <<readonly>> splineQtdPtoMax : int = 10
+    - splineQtdPto : int = 10
+    + SplineQtdPto(inc:int) : void
+    - BezierMatrizPeso() : void
+    + SplineBezier(_paiRef:Objeto, _rotulo:char)
+    - PontosControle() : void
+    - PoliedroControle() : void
+    + Atualizar() : void
+    + AtualizarSpline(ptoInc:Ponto4D, proximo:bool) : void
+    + <<override>> ToString() : string
+}
+Objeto <|-- SplineBezier
+SplineBezier --> "poliedroControle" Poligono
+@enduml

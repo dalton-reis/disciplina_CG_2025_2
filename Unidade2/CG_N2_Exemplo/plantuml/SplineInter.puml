@@ -1,0 +1,17 @@
+@startuml SplineInter
+class SplineInter {
+    - ptoSelecionado : int = 0
+    - rotuloAtual : char
+    - <<readonly>> splineQtdPtoMax : int = 10
+    - splineQtdPto : int = 10
+    + SplineQtdPto(inc:int) : void
+    + SplineInter(_paiRef:Objeto, _rotulo:char)
+    - PontosControle() : void
+    - PoliedroControle() : void
+    + Atualizar() : void
+    + AtualizarSpline(ptoInc:Ponto4D, proximo:bool) : void
+    + <<override>> ToString() : string
+}
+Objeto <|-- SplineInter
+SplineInter --> "poliedroControle" Poligono
+@enduml

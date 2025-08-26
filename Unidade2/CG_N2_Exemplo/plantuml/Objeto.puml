@@ -1,0 +1,21 @@
+@startuml Objeto
+class Objeto {
+    + PrimitivaTamanho : float <<get>> <<set>>
+    + PontosListaTamanho : int <<get>>
+    + Bbox() : BBox
+    + Objeto(_paiRef:Objeto, _rotulo:char, objetoFilho:Objeto)
+    + ObjetoAtualizar() : void
+    + Desenhar() : void
+    + FilhoAdicionar(filho:Objeto) : void
+    + PontosId(id:int) : Ponto4D
+    + PontosAdicionar(pto:Ponto4D) : void
+    + PontosAlterar(pto:Ponto4D, posicao:int) : void
+    + PontosLimpar() : void
+    + GrafocenaBusca(_rotulo:char) : Objeto
+    + GrafocenaBuscaProximo(objetoAtual:Objeto) : Objeto
+    + GrafocenaImprimir(idt:string) : void
+    + OnUnload() : void
+}
+Objeto --> "PrimitivaTipo" PrimitiveType
+Objeto --> "ShaderObjeto" Shader
+@enduml

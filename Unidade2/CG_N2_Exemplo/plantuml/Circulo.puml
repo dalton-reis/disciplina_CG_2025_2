@@ -1,0 +1,9 @@
+@startuml Circulo
+class Circulo {
+    + Circulo(_paiRef:Objeto, _rotulo:char, _raio:double)
+    + Circulo(_paiRef:Objeto, _rotulo:char, _raio:double, ptoDeslocamento:Ponto4D)
+    + Atualizar(ptoDeslocamento:Ponto4D) : void
+    + <<override>> ToString() : string
+}
+Objeto <|-- Circulo
+@enduml
