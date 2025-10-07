@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "1-CreatingAWindow/1-CreatingAWindow.sln"
+	}
+}

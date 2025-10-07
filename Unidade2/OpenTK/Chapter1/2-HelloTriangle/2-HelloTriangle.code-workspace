@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "2-HelloTriangle/2-HelloTriangle.sln"
+	}
+}

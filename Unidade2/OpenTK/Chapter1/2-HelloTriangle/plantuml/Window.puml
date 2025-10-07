@@ -1,0 +1,6 @@
+@startuml Window
+class Window {
+    + Window(gameWindowSettings:GameWindowSettings, nativeWindowSettings:NativeWindowSettings)
+}
+GameWindow <|-- Window
+@enduml
