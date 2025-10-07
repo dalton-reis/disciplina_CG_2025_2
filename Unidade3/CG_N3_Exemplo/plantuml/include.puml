@@ -1,0 +1,6 @@
+@startuml include
+!include ./Poligono.puml
+!include ./Mundo.puml
+!include ./Objeto.puml
+!include ./Program.puml
+@enduml

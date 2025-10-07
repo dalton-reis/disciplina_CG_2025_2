@@ -1,0 +1,33 @@
+@startuml Objeto
+class Objeto {
+    + PrimitivaTamanho : float <<get>> <<set>>
+    + Bbox() : BBox
+    + TrocaEixoRotacao(eixo:char) : void
+    + Objeto(_paiRef:Objeto, _rotulo:char, objetoFilho:Objeto)
+    + ObjetoRemover() : void
+    + ObjetoAtualizar() : void
+    + ObjetoMatrizGlobal(matrizGlobalPai:Transformacao4D) : Transformacao4D
+    + Desenhar(matrizGrafo:Transformacao4D, objetoSelecionado:Objeto) : void
+    + FilhoAdicionar(filho:Objeto) : void
+    + PontosId(id:int) : Ponto4D
+    + PontosAdicionar(pto:Ponto4D) : void
+    + PontosAlterar(pto:Ponto4D, posicao:int) : void
+    + PontosLimpar() : void
+    + PontoMaisPerto(mousePto:Ponto4D, remover:bool) : int
+    + GrafocenaBusca(_rotulo:char) : Objeto
+    + GrafocenaBuscaProximo(objetoAtual:Objeto) : Objeto
+    + GrafocenaImprimir(idt:string) : void
+    + MatrizImprimir() : void
+    + MatrizAtribuirIdentidade() : void
+    + MatrizTranslacaoXYZ(tx:double, ty:double, tz:double) : void
+    + MatrizEscalaXYZ(Sx:double, Sy:double, Sz:double) : void
+    + MatrizEscalaXYZBBox(Sx:double, Sy:double, Sz:double) : void
+    + MatrizRotacaoEixo(angulo:double) : void
+    + MatrizRotacao(angulo:double) : void
+    + MatrizRotacaoZBBox(angulo:double) : void
+    + OnUnload() : void
+    + ScanLine(ptoClique:Ponto4D, objetoSelecionado:Objeto) : bool
+}
+Objeto --> "PrimitivaTipo" PrimitiveType
+Objeto --> "ShaderObjeto" Shader
+@enduml

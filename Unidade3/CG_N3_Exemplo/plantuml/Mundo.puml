@@ -1,0 +1,22 @@
+@startuml Mundo
+class Mundo {
+    - rotuloAtual : char = '?'
+    + Mundo(gameWindowSettings:GameWindowSettings, nativeWindowSettings:NativeWindowSettings)
+    - Gizmo_Sru3D() : void
+}
+class "Dictionary`2"<T1,T2> {
+}
+GameWindow <|-- Mundo
+Mundo o-> "mundo" Objeto
+Mundo o-> "grafoLista<char,Objeto>" "Dictionary`2"
+Mundo o-> "objetoSelecionado" Objeto
+Mundo o-> "objetoNovo" Objeto
+Mundo o-> "matrizGrafo" Transformacao4D
+Mundo --> "_shaderBranca" Shader
+Mundo --> "_shaderVermelha" Shader
+Mundo --> "_shaderVerde" Shader
+Mundo --> "_shaderAzul" Shader
+Mundo --> "_shaderCiano" Shader
+Mundo --> "_shaderMagenta" Shader
+Mundo --> "_shaderAmarela" Shader
+@enduml

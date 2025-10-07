@@ -1,0 +1,99 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publishDebug",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publishRelease_win-x64",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "-c",
+        "release",
+        "-r",
+        "win-x64",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publishRelease_ubuntu.16.10-x64",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "-c",
+        "release",
+        "-r",
+        "ubuntu.16.10-x64",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publishRelease_osx-x64",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "-c",
+        "release",
+        "-r",
+        "osx-x64",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publishRelease_osx-arm64",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "-c",
+        "release",
+        "-r",
+        "osx-arm64",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "watch",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "--project",
+        "${workspaceFolder}/CG_N3_Exemplo.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
