@@ -1,0 +1,10 @@
+@startuml
+class Spline {
+    + SplineQtdPto(inc:int) : void
+    + Spline(paiRef:Objeto, _rotulo:char)
+    + Atualizar() : void
+    + AtualizarSpline(ptoInc:Ponto4D, proximo:bool) : void
+    + <<override>> ToString() : string
+}
+Objeto <|-- Spline
+@enduml

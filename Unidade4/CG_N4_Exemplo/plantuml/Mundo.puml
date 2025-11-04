@@ -1,0 +1,6 @@
+@startuml
+class Mundo {
+    + Mundo(gameWindowSettings:GameWindowSettings, nativeWindowSettings:NativeWindowSettings)
+}
+GameWindow <|-- Mundo
+@enduml
