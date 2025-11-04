@@ -147,6 +147,9 @@ namespace gcgcg
       base.OnRenderFrame(e);
 
       GL.Clear(ClearBufferMask.ColorBufferBit);
+#if CG_Debug
+      CheckGLError("Após GL.Clear");
+#endif
 
       matrizGrafo.AtribuirIdentidade();
       mundo.Desenhar(matrizGrafo, objetoSelecionado);
@@ -294,6 +297,17 @@ namespace gcgcg
 #endif
 #endif
     }
+
+#if CG_Debug
+    public static void CheckGLError(string message = "")
+    {
+        var error = GL.GetError();
+        if (error != OpenTK.Graphics.OpenGL4.ErrorCode.NoError)
+        {
+            Console.WriteLine($"[OpenGL Error] {error} {message}");
+        }
+    }
+#endif
 
   }
 }
