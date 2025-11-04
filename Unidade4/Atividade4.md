@@ -1,6 +1,6 @@
 # Unidade 4: Conceitos Básicos 3D - atividade  
 
-## Desafio (opcional)
+<!-- ## Desafio (opcional)
 
 Como desafio, proponho um trabalho opcional que, se realizado, acrescentará um ponto à sua média.  
 A atividade consiste em responder a um questionário de avaliação de um TCC, que irá guiá-lo por etapas que envolvem implementação de código.  
@@ -11,7 +11,7 @@ Atenção: o ponto extra só será concedido se todas as instruções do questio
 
 Prazo: 20/06/2025.  
 
-<https://docs.google.com/forms/d/e/1FAIpQLSfp7hZ6R7X6F13iZ59K1GvXUPwQq6xV5yRFYZ4sZp_rEqTX3w/viewform>  
+<https://docs.google.com/forms/d/e/1FAIpQLSfp7hZ6R7X6F13iZ59K1GvXUPwQq6xV5yRFYZ4sZp_rEqTX3w/viewform>   -->
 
 ## Atividade Individual
 
