@@ -17,7 +17,7 @@ Prazo: 20/06/2025.
 
 \[peso: 2,0] Esta atividade é para ser desenvolvida individualmente pelo aluno, no caso, não é em equipe. Essa atividade serve para reforçar/praticar os conceitos relacionados a Unidade 4.  
 
-[Atividade4_VisEdu](Atividade4_VisEdu.md)  
+[Atividade4_VisEdu](Atividade4_VisEdu)  
 
 ## Atividade em Equipe
 
