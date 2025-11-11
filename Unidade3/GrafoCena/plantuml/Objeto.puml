@@ -1,0 +1,8 @@
+@startuml
+class Objeto {
+    + Objeto(_rotulo:char)
+    + ObjetoFilhoAdicionar(_rotulo:char) : void
+    + GrafocenaBusca(_rotulo:char) : Objeto?
+    + GrafocenaImprimir(idt:String) : void
+}
+@enduml

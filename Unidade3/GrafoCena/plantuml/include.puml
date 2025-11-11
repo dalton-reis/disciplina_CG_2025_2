@@ -1,0 +1,11 @@
+@startuml
+!include ./Mundo.puml
+!include ./Objeto.puml
+!include ./Program.puml
+!include ./obj/Debug/net6.0/GrafoCena.AssemblyInfo.puml
+!include ./obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include ./obj/Debug/net6.0/GrafoCena.GlobalUsings.g.puml
+!include ./obj/Debug/net9.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.puml
+!include ./obj/Debug/net9.0/GrafoCena.AssemblyInfo.puml
+!include ./obj/Debug/net9.0/GrafoCena.GlobalUsings.g.puml
+@enduml
